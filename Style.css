@@ -12,6 +12,13 @@ body {
 }
 
 
+.logo{
+    position: absolute;
+    top: 10;
+    left: 15;
+}
+
+
 
 .container {
     max-width: 1150px;
