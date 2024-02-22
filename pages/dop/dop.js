@@ -13,7 +13,6 @@ class makeAnimal{
     }
     setMouseup(){
         window.addEventListener("mouseup",e => {
-            console.log(this.funk)
             window.removeEventListener("mousemove", this.funk);
 
               if (this.isRightAssembly()) {
@@ -56,7 +55,7 @@ class makeAnimal{
         let elem1Size = elem1.getBoundingClientRect();
         let elem2Size = elem2.getBoundingClientRect();
         return (elem2Size.top<elem1Size.top &&
-            elem2Size.bottom < elem1Size.top+30 );
+            elem2Size.bottom < elem1Size.top+40 );
     }
     chekOnBottom(elem1,elem2){
         let elem1Size = elem1.getBoundingClientRect();
@@ -84,7 +83,6 @@ class makeAnimal{
             this.chekOverlay(body,butterfly) &&
             this.chekOnTop(butterfly,mouth)&&
             this.chekOnTop(mouth,eye)
-
         );
     }
     getdeg(elem){
@@ -113,12 +111,14 @@ class makeAnimal{
             
         })
     }
-        imgMove(e) {
-        let x = e.pageX;
-        let y = e.pageY;
-        this.currentImage.style.left = `${x}px`;
-        this.currentImage.style.top = `${y}px`;
-      }
+
+    
+    imgMove(e) {
+    let x = e.pageX;
+    let y = e.pageY;
+    this.currentImage.style.left = `${x}px`;
+    this.currentImage.style.top = `${y}px`;
+    }
     
     onDown(e) {
         this.currentImage=e.target;
