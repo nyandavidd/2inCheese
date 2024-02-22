@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "19849";
+    src: url(fonts/19849_.woff);
+}
+
+body {
+    font-family: "19849";
+}
+
+* {
+    font-weight: normal;
+}
+
+
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+   
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.header1 {
+    text-align: center;
+}
+
+.header1 h3 {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.header1 p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-top: 60px;
+}
+
+.zavtrak .class1 img {
+    width: 300px;
+}
+
+
+@media (max-width: 500px) { 
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .header1 h3 {
+        font-size: 21px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    .header1 p {
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .zavtrak .class1 .dish {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .zavtrak .class1 img {
+        width: 145px;
+    }
+    .zavtrak .class1 {
+        padding-left: 3px;
+        padding-right: 4px;
+        
+    }
+
+    .zavtrak .class1 ul {
+        font-size: 7px;
+        padding-left: 5px;
+
+    }
+
+    .sendvi .sendv img {
+        width: 145px;
+    }
+
+    .sendvi .sendv {
+        padding-left: 3px;
+    }
+
+    .sendvi .sendv ul {
+        font-size: 7px;
+        padding-left: 5px;
+    }
+
+    .sendvi .sendv .dish {
+        font-size: 10px;
+    }
+
+   
+
+    .zakus .zaku img {
+        width: 145px;
+    }
+
+    .zakus .zaku {
+        padding-left: 3px;
+    }
+
+    .zakus .zaku ul {
+        font-size: 7px;
+        padding-left: 5px;
+    }
+
+    .zakus .zaku .dish {
+        font-size: 10px;
+    }
+
+   
+}
+
+.class1 {
+    text-align: left;
+    padding-right: 28px;
+    padding-left: 10px;
+    display:inline-block; 
+    
+}
+
+.class1 ul {
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 130%;
+}
+
+.class1 p {
+    font-size: 14px;
+}
+
+.sendv {
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 43px;
+    display:inline-block
+}
+
+.sendv ul {
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 130%;
+}
+
+.sendv img {
+    width: 300px;
+}
+
+
+
+.zaku {
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 43px;
+    display:inline-block
+}
+
+.zaku ul {
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 130%; 
+}
+
+.zaku img {
+    width: 300px;
+}
+
+
+
+
+

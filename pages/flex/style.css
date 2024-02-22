@@ -1,0 +1,108 @@
+.content {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    justify-content:center;
+    align-items:normal;
+    gap: 20px;
+    transform: scale(0.5);
+}
+
+
+
+
+.box {
+    border: #1faaa3 10px smooth;
+}
+
+.first_letter {
+    font-size: 190px;
+    fill: #c5c1c5;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    stroke: #1faaa3;
+    stroke-width: 3px;
+    transform: translate(30px, 60px);
+    left: 50px;
+}
+
+.second_letter {
+    font-size: 190px;
+    fill: #c5c1c5;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    stroke: #1faaa3;
+    stroke-width: 3px;
+    transform: translate(85px, 30px);
+}
+
+.text {
+    font-size: 10px;
+    fill: #1faaa3;
+    font-family: Tahoma, sans-serif;
+    opacity: 0%;
+}
+
+.box:active .text {
+    opacity: 100%;
+}
+
+.box:active .first_letter{
+    filter: drop-shadow(10px 10px 3px #034b47);
+    transform: scale(0.5) translate(3px, 266px);
+    transition: transform 0.3s;
+}
+
+.box:active .second_letter{
+    filter: drop-shadow(10px 10px 3px #034b47);
+    transform: scale(0.5) translate(300px, 1px);
+    transition: transform 0.3s ;
+}
+
+.box:active {
+    background: url(img.jpeg);
+    background-size: cover;
+    background-position: center; 
+    animation: shake 1s infinite;
+}
+
+
+
+
+@keyframes shake{
+	0% {transform: translateX(10px)}
+  25%  {transform: translateX(-10px)}
+  50%  {transform: translateX(10px)}
+  75%  {transform: translateX(-10px)}
+  100% {transform: translateX(10px)}
+}
+
+.box .animatedElement{
+    opacity: 0%;
+}
+
+.box:hover .animatedElement {
+    opacity: 100%;
+}
+
+.box:active .animatedElement {
+    opacity: 0%;
+}
+
+
+  
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Машины</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="content" class="hidden">
+        <p>Выберите транспорт:</p>
+        <button id="motoButton"><img src="src/moto.png"></button>
+        <button id="carButton"><img src="src/car.png"></button>
+        <p>Укажите объём бензина:
+             <span id="fuelValue">100</span> 
+        л.</p>
+        <input type="range" id="fuelRange" min="0" max="500" step="1">
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

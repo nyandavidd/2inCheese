@@ -1,0 +1,467 @@
+body{
+    background-color: #eee;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+.header{
+    position: fixed;
+    z-index: 3;
+    background-color:#eee;
+    width:100%;
+    height: 120px;
+}
+
+.pokeball{          /*Отрисовка логотипа*/
+    position: relative;
+    height: 100px; 
+    width: 100px; 
+    overflow: hidden;
+    margin-bottom: 210px;
+}
+
+.upper{
+    position: absolute;
+    top:0;
+    width: 96px;
+    height: 48px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    border: 2px solid black;
+    background: #f73434;
+}
+
+.lower{
+    position: absolute;
+    bottom: 0;
+    width: 96px;
+    height: 48px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    border: 2px solid black;
+    background: #ffffff;
+}
+
+.center_1{
+    width: 40px; 
+    height: 40px;
+    background: #474747;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+}
+
+.center_2{
+    width: 20px; 
+    height: 20px;
+    background: #c1c1c1;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 37%;
+}
+
+
+.wrapper{
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.center{
+    text-align: center;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.navigation img{
+    height: 70px;
+}
+
+.nav{               /*Навигация в header*/
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 220px;
+}
+
+.nav>li{
+    padding-left: 23px;  /*отступ от черточки слева*/
+    margin-left: 22px;  /*отступ от черты снаружи*/
+    position: relative;
+}
+
+.nav>li:first-child{
+    padding-left: 0;  /*отступ от черточки слева*/
+    margin-left: 0;
+}
+
+.nav>li::before{    /*навигация: черточки*/
+    content: '';
+    display:block;
+    width:2px;
+    height: 100%;
+    background-color: #474747;
+    position: absolute;
+    left: 0;
+}
+
+.nav>li:first-child::before{
+    display: none;
+}
+
+.nav>li:first-child{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.nav>li>a{
+    text-decoration: none;
+    color: #474747;
+}
+
+.nav>li>a.active_2{/*????????????*/
+    color: #272424;
+
+}
+
+.banner{
+    background-image: url(../image/backgrjpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-top: 260px;
+    padding-bottom: 285px;
+}
+
+.pika{
+    position: absolute;
+    right: 0;
+    top: -265px;
+    max-height: 650px;
+}
+
+.title{
+    font-size: 50px;
+    margin-bottom: 23px;
+}
+
+.description{
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 570px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 24px;
+}
+
+.btn{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 16px 0;
+    max-width: 190px;
+    text-align: center;
+}
+
+.h2{
+    font-size: 45px;
+    color:black;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display:inline-block; /*делаем эл-т строчным*/
+
+    padding-left: 127px;
+    padding-right: 127px;
+    margin-bottom: 20px;
+}
+
+.h2::after, .h2::before{
+    content: '';
+    position:absolute;
+    background-image: url(../image/crown.svg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 100px;
+    width: 100px;
+    top: calc(50% - 50px);
+}
+
+.h2::before{
+    right:0;
+}
+
+.h2::after{
+    left:0;
+}
+
+.h2 + p{
+    font-size: 20px;
+    color: rgb(108, 107, 107);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 42px;
+    margin-bottom: 65px;
+}
+
+.menu > li{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.menu > li::before{ /*черточки*/
+    content: '';
+    display:block;
+    width:2px;
+    height: 100%;
+    background-color: #474747;
+    position: absolute;
+    left: 0;
+}
+
+.menu > li:first-child::before{ /*убираем 1-ю черточку*/
+    display: none;
+}
+
+.menu > li > a{
+    text-decoration: none;
+    color:#474747;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 17px;
+}
+
+.menu > li > a.active{
+    border-bottom: 4px solid #f73434;
+    position:relative;
+}
+
+.menu > li > a.active::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:0 auto;
+    display: block;
+    width:0;
+    height:0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #f73434;
+}
+
+.box{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px #8a8989;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+}
+
+.box-item{
+    padding: 0 0 58px 100px;
+    box-sizing: content-box;
+}
+
+.number{
+    font-family: 'Roboto', sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 0.5;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    color:#1a1a1a;
+}
+
+.number::after{
+    content:'';
+    display:block;
+    position: absolute;
+}
+
+.number-one::after{
+    background-image: url(../image/egg.svg);
+    width: 200px;
+    height: 200px;
+    left: 70px;
+    top: calc(50% - 100px);
+}
+
+.number-two::after{
+    background-image: url(../image/eevee.svg);
+    width: 200px;
+    height: 200px;
+    left:70px;
+    top: calc(50% - 100px);
+}
+
+.number-three::after{
+    background-image: url(../image/gotcha.svg);
+    width: 200px;
+    height: 200px;
+    left:70px;
+    top: calc(50% - 100px);
+}
+
+.box-text{
+    border-right: 1px solid #8a8989;
+    padding-right: 55px;
+    /*flex-basis: ;*/
+}
+
+.box-item:last-child .box-text{
+    border-right: none;
+}
+
+.box-text h3{
+    font-size: 45px;
+    color:#1a1a1a;
+    margin-bottom: 23px;
+}
+
+.box-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:#1a1a1a;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+.btn-start{
+    /*display: block;*/
+    box-shadow: 0px 0px 10px 0px #8a8989;
+    position:relative;
+    text-decoration: none;
+
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+
+    border: 2px solid white;
+    padding: 16px 50px 16px 10px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #f73434;
+}
+
+.btn-start::after{  /*картинка к кнопке*/
+    content:'';
+    position: absolute;
+    display:block;
+    background-image: url(../image/magic-wand.svg);
+    height: 60px;
+    width: 60px;
+    right: 0px;
+    bottom: 5px;
+}
+
+.page{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.footer{
+    background-color: #f73434;
+    padding: 30px 0;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 1200px){
+    .wrapper{
+        max-width: 800px;
+    }
+
+    .pika{
+        display: none;
+    }
+    .banner{
+        padding-top: 140px;
+        padding-bottom: 80px;
+    }
+    .h2, .box-text h3{
+        font-size: 35px;
+    }
+    .h2 + p{
+        font-size: 18px;
+    }
+    .menu>li{
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .box-text{
+        border-right:none;
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eee;
+    }
+    .box-item{
+        padding: 45px 55px 24px 55px;
+    }
+    .box-item:last-child .box-text{
+        border-bottom: none;
+    }
+
+
+}
+
+@media (max-width: 750px){
+    .navigation{
+        flex-direction: column;
+    }
+
+    .header{
+        height: 150px;
+    }
+    .banner{
+        padding-top: 150px;
+    }
+    .nav{
+        margin-top: -200px;
+    }
+    .h2::before, .h2::after{
+        display:none;
+    }
+    .btn-start{
+        font-size: 20px;
+        background-size: contain;
+    }
+
+}
